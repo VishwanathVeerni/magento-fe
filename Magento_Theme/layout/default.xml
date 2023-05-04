@@ -1,0 +1,5 @@
+<body>
+ <referenceContainer name="header.container">
+    <block ifconfig="carriers/freeshipping/active" class="Magento\Framework\View\Element\Template" name="bannerFile" template="Magento_Theme::bannerFile.phtml" before="-"/>
+ </referenceContainer>
+</body>
