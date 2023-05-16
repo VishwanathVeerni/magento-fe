@@ -1,5 +1,9 @@
-<body>
- <referenceContainer name="header.container">
-    <block ifconfig="carriers/freeshipping/active" class="Magento\Framework\View\Element\Template" name="bannerFile" template="Magento_Theme::bannerFile.phtml" before="-"/>
- </referenceContainer>
-</body>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+  <body>
+    <referenceContainer name="page.wrapper">
+      <container name="custom-container" htmlTag="div" before="-" htmlClass="custom-container" >
+       <block ifconfig="carriers/freeshipping/active" class="Magento\Framework\View\Element\Template" name="bannerFile" template="Magento_Theme::bannerFile.phtml"/>
+      </container>
+    </referenceContainer>
+  </body>
+</page>
